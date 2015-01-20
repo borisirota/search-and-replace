@@ -1,0 +1,31 @@
+{
+  "name": "search-and-replace",
+  "version": "0.0.1",
+  "description": "command line utility to replace a regex with replacement within a found file in some path",
+  "author": "Boris Sirota <borisirota@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/borisirota/search-and-replace",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/borisirota/search-and-replace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/borisirota/search-and-replace/issues"
+  },
+  "keywords": [
+    "replace",
+    "search",
+    "regex",
+    "cli"
+  ],
+  "contributors": [
+    "Boris Sirota <borisirota@gmail.com>"
+  ],
+  "bin": {
+    "search-and-replace": "bin/search-and-replace.js"
+  },
+  "dependencies": {
+    "find-file": "^1.0.1",
+    "replace": "^0.3.0"
+  }
+}
