@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+'use strict';
+
 var Find = require('find-file');
 var replace = require('replace');
 
@@ -16,7 +18,9 @@ var find = new Find()
 
 find.run(function (err, files) {
 
-    if (err || !files.length) return;
+    if (err || !files.length) {
+        return;
+    }
 
     replace({
         regex: new RegExp(regex, 'g'),
